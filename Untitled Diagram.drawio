@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-03T10:03:52.219Z" agent="5.0 (Windows)" etag="7YvxLK6yu_llRfLjV-1b" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-03T10:07:34.434Z" agent="5.0 (Windows)" etag="qNwV9KImFiovV98CM3kr" version="14.4.3" type="github">
   <diagram id="V7bD6tvDuis-bAX8pQNE" name="Page-1">
     <mxGraphModel dx="1038" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -11,13 +11,13 @@
           <mxGeometry x="560" y="60" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rVa3kurJZuQboSxvV21v-5" value="MongoDB + Express" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="100" width="120" height="60" as="geometry" />
+          <mxGeometry x="50" y="90" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rVa3kurJZuQboSxvV21v-6" value="Страница со странами" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="570" y="100" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rVa3kurJZuQboSxvV21v-7" value="&lt;div&gt;Страница конкретной страны&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="190" width="120" height="60" as="geometry" />
+          <mxGeometry x="610" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rVa3kurJZuQboSxvV21v-11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rVa3kurJZuQboSxvV21v-5" target="rVa3kurJZuQboSxvV21v-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -38,23 +38,26 @@
         <mxCell id="rVa3kurJZuQboSxvV21v-14" value="GET &#39;/:id&#39; основная инфа" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=15;" vertex="1" parent="1">
           <mxGeometry x="379.12" y="166.65" width="159.42" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="rVa3kurJZuQboSxvV21v-15" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+        <mxCell id="rVa3kurJZuQboSxvV21v-15" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="rVa3kurJZuQboSxvV21v-7">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="270" as="sourcePoint" />
             <mxPoint x="570" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rVa3kurJZuQboSxvV21v-16" value="fetch данных карты, валюты, времени" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-15;" vertex="1" parent="1">
+        <mxCell id="rVa3kurJZuQboSxvV21v-16" value="fetch данных карты, валюты, времени" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
           <mxGeometry x="232.20999999999998" y="260" width="167.79" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rVa3kurJZuQboSxvV21v-17" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="rVa3kurJZuQboSxvV21v-5">
+        <mxCell id="rVa3kurJZuQboSxvV21v-17" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rVa3kurJZuQboSxvV21v-5" target="rVa3kurJZuQboSxvV21v-7">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="370" y="290" as="sourcePoint" />
-            <mxPoint x="560" y="220" as="targetPoint" />
+            <mxPoint x="580" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rVa3kurJZuQboSxvV21v-18" value="&lt;div&gt;PATCH &#39;/:id&#39;&lt;/div&gt;&lt;div&gt;(рейтинг места)&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=10;" vertex="1" parent="1">
           <mxGeometry x="220.66" y="186.65" width="190.88" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rVa3kurJZuQboSxvV21v-21" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;name: String,&lt;/div&gt;&lt;div&gt;capital: String,&lt;/div&gt;&lt;div&gt;description: String,&lt;/div&gt;&lt;div&gt;map?: координаты,&lt;/div&gt;&lt;div&gt;sights: [&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;img: string,&lt;/div&gt;&lt;div&gt;name: String,&lt;/div&gt;&lt;div&gt;description: String,&lt;/div&gt;&lt;div&gt;rate: [{user: rate}]&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;br&gt;&lt;/div&gt;&lt;div&gt;]&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="188.54" y="320" width="441.46" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
