@@ -20,7 +20,8 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
-    "mongoose": "^5.11.15"
+    "mongoose": "^5.11.15",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@imaginary-cloud/eslint-config-react": "^1.0.1",

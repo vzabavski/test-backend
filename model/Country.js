@@ -9,6 +9,14 @@ const schema = new Schema({
         type: String,
         required: true
     },
+    info: {
+        type: String,
+        default: 'Cool country'
+    },
+    img: {
+        type: String,
+        default: ''
+    },
     sights: {
         type: [
             {

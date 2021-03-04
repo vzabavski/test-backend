@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+.title {
+    width: 200px;
+    height: 100px;
+}
+.avatar {
+    width: 200px;
+    height: 150px;
+}
