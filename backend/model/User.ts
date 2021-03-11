@@ -1,0 +1,21 @@
+import { Schema, model, Document } from 'mongoose';
+
+interface UserResponse extends Document {
+  username: string,
+  password: string,
+  _id: string
+}
+
+const User = new Schema({
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+});
+
+export default model<UserResponse>('User', User);

@@ -4,6 +4,7 @@ const Country = require('../model/Country')
 
 router.get('/', async (req, res) => { 
     try {
+        //res.status(200).json('It works!')
         const countries = await Country.find()
         res.json(countries)
     } catch (error) {

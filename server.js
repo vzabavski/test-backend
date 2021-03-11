@@ -7,10 +7,12 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json())
 
 app.use('/countries', require('./routes/app.routes'))
+app.use('/auth', require('./routes/auth.routes'))
+
 
 const start = async() => {
     try { 
-        await mongoose.connect('mongodb+srv://vitaly:MDpassword@cluster0.ayz0q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+        await mongoose.connect('mongodb+srv://travel-app:travel-app@cluster0.sicqh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
             useNewUrlParser: true,
             useFindAndModify: false,
             useCreateIndex: true,
