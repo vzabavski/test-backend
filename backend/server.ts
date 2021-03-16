@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(formData.parse())
 app.use('/countries', require('./routes/app.routes'));
 app.use('/users', require('./routes/app.user.routes'));
-app.use('/images', require('./routes/image.routes')); 
+app.use('/images', require('./routes/image.routes'));
 
 const start = async () => {
   try {
