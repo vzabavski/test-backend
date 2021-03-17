@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import Country from '../model/Country';
+
 const router = Router();
 
 router.get('/', async (req: Request, res: Response) => {
@@ -15,17 +16,6 @@ router.get('/:id', async (req: Request, res: Response) => {
   try {
     const country = await Country.findById(req.params.id);
     res.json(country);
-  } catch (error) {
-    res.status(500).send(error.message);
-  }
-});
-
-router.patch('/:id', async (req: Request, res: Response) => {
-  try {
-    const country = await Country.findById(req.params.id);
-    country['sights'] = req.body.sights
-    await country.save()
-    res.json(country['sights'] = req.body.sights);
   } catch (error) {
     res.status(500).send(error.message);
   }

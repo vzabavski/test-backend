@@ -1,18 +1,20 @@
-import express from 'express';
-import mongoose from 'mongoose';
 import cors from 'cors';
-import formData from 'express-form-data'
+import express from 'express';
+import formData from 'express-form-data';
+import mongoose from 'mongoose';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
-app.use(formData.parse())
+app.use(formData.parse());
 app.use('/countries', require('./routes/app.routes'));
-app.use('/users', require('./routes/app.user.routes'));
-app.use('/images', require('./routes/image.routes'));
-
+app.use('/users', require('./routes/user.routes'));
+app.use('/avatar', require('./routes/avatar.routes'));
+app.get('/', (req: any, res: any) => {
+  res.send('It Works!')
+})
 const start = async () => {
   try {
     await mongoose.connect(
@@ -25,9 +27,9 @@ const start = async () => {
       },
     );
 
-    app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+    app.listen(PORT, () => global.console.log(`Server started on port ${PORT}`));
   } catch (error) {
-    console.log(error);
+    global.console.log(error);
   }
 };
 
