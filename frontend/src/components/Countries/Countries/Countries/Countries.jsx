@@ -5,7 +5,7 @@ import './index.css'
 export const Countries = () => {
    const [countries, setCountries] = React.useState([])
    React.useEffect(() => {
-       axios.get('/countries/')
+       axios.get('http://travel-test-backend.herokuapp.com/countries/')
         .then((res) => setCountries(res.data))
    }, [])
    console.log(countries)

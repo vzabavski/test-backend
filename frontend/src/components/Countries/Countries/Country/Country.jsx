@@ -6,7 +6,7 @@ export const Country = () => {
    const [country, setCountry] = React.useState({})
    const idName = useLocation().pathname.slice(11)
    React.useEffect(() => {
-       axios.get(`/countries/${idName}`)
+       axios.get(`http://travel-test-backend.herokuapp.com/countries/${idName}`)
         .then((res) => setCountry(res.data))
    }, [])
    console.log(country)
