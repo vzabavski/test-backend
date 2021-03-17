@@ -17,6 +17,9 @@ const schema = new Schema({
     type: String,
     default: '',
   },
+  video: {
+    type: String
+  },
   sights: {
     type: [
       {
